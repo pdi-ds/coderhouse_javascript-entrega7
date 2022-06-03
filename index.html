@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Septima entrega - Coderhouse</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<section class="indexHero-section">
+	<div class="container">
+		<div data-step="sN1" data-callback="sN1">
+			<div class="form-container">
+				<div class="form-row">
+					<label>Usuario:</label>
+                    <input type="text" value="Ricardo Fort" placeholder="Usuario" name="name">
+				</div>
+				<div class="form-row last">
+					<button type="button" data-role="next">Siguiente</button>
+				</div>
+			</div>
+		</div>
+		<div data-step="sN2" data-callback="sN2">
+			<div class="form-container">
+				<div class="form-row">
+                    <label>Ingresá una moneda inicial:</label>
+					<select name="from">
+						<option value=""></option>
+					</select>
+				</div>
+				<div class="form-row">
+					<label>Valor a convertir:</label>
+					<input type="text" name="amount">
+				</div>
+				<div class="form-row last">
+					<button type="button" class="back" data-role="previous">Atras</button>
+					<button type="button" data-role="next">Siguiente</button>
+				</div>
+			</div>
+		</div>
+		<div data-step="sN3" data-callback="sN3">
+			<div class="form-container">
+                <p class="bold">Ingresá una moneda final:</p>
+				<div class="conversions">
+					<div class="converting">
+						<div class="form-row">
+                            <label>Valor a convertir:</label>
+							<select name="from">
+								<option value=""></option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="form-row last">
+					<button type="button" class="back" data-role="previous">Atras</button>
+					<button type="button" data-role="next">Siguiente</button>
+				</div>
+			</div>
+		</div>
+		<div data-step="sN4" data-callback="sN4">
+			<div class="form-container">
+				<div class="conversions">
+				</div>
+				<div class="form-row last">
+					<button type="button" class="back" data-role="previous">Atras</button>
+					<button type="button" data-role="restart">Inicio</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+</body>
+<script src="js/functions.js"></script>
+</html>

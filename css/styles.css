@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+	transition-property: all;
+	transition-duration: 200ms;
+	transition-timing-function: ease-in-out;
+	margin: 0;
+	padding: 0;
+	border-color: transparent;
+	text-decoration: none;
+}
+body {background-color: #ebf3fa;}
+.indexHero-section {
+    display: flex;
+    height: 90vh;
+    margin: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 4px;
+    border-color: hsla(209.99999999999994, 55.56%, 92.94%, 1.00);
+    border-radius: 45px;
+    box-shadow: -3px -3px 8px 0 white, 
+				 3px 3px 8px 0 #88a5bf;
+  }
+.hidden {display: none;}
+p {
+	margin-bottom: 12px;
+	font-size: 1rem;
+	color: #31456A;
+}
+p.bold {
+	font-weight: bold;
+	color: #31456A;
+	text-shadow: -1px -1px 2px #FFFFFF, 
+	              1px 1px 2px rgba(136, 165, 191, 0.5);
+}
+[data-step] {display: none;}
+[data-step].current {display: block;}	
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+.form-row {
+	display: flex;
+	flex-direction: column;
+}
+	.form-row label {
+		display: block;
+		margin-bottom: 4px;
+		padding-left: 4px;
+		font-weight: 500;
+		font-size: 1rem;
+		color: #31456A;
+		text-shadow: -1px -1px 2px #FFFFFF, 
+					  1px 1px 2px rgba(136, 165, 191, 0.5);
+		}
+		.form-row input,
+		.form-row select {
+			padding: 10px 15px 10px 15px;
+			border-radius: 100px;
+			background: #ebf3fa;
+			font-size: 1rem;
+			border-width: 1px;
+			border-radius: 100px;
+			background: #ebf3fa;
+			box-shadow: inset 5px 5px 10px #c8cfd5,
+            			inset -5px -5px 10px #ffffff;
+		}
+		.form-row input.fail:focus-visible,
+		.form-row select.fail:focus-visible,
+		.form-row input.fail,
+		.form-row select.fail {
+			outline: none;
+			border-color: red;
+			}
+		.form-row div.fail {
+			margin-top: 4px;
+			padding: 10px 15px 10px 15px;
+			border-radius: 500px;
+			background-color: red;
+			font-size: 12px;
+			color: #fff;
+		}
+		.form-row button {
+			cursor: pointer;
+			margin-top: 10px;
+			padding: 8px 16px 9px;
+			border-radius: 100px;
+			background: #ebf3fa;
+			box-shadow:  5px 5px 10px #c8cfd5,
+						 -5px -5px 10px #ffffff;			
+		}
+		.form-row button:hover {
+			border-radius: 100px;
+			background: linear-gradient(145deg, #d4dbe1, #fbffff);
+			box-shadow:  5px 5px 10px #c8cfd5,
+						 -5px -5px 10px #ffffff;
+		}
+		.form-row button:active{
+			border-radius: 100px;
+			background: #ebf3fa;
+			box-shadow: inset 5px 5px 10px #c8cfd5,
+						inset -5px -5px 10px #ffffff;
+		}
+.conversions {margin-top: 24px;}
+	.conversions .converting {
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+		}
+		.conversions .converting p {margin: 0;}
